@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hepta - Multipurpose Business Joomla Template</title>
+		<description><![CDATA[]]></description>
+		<link>http://rstheme.com/products/joomla/hepta/index.php/component/content/category/26-medical-blog?Itemid=101</link>
+		<lastBuildDate>Sun, 07 Apr 2019 10:40:16 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://rstheme.com/products/joomla/hepta/index.php/component/content/category/26-medical-blog?format=feed&amp;type=rss&amp;Itemid=101"/>
+		<language>en-gb</language>
+		<item>
+			<title> Digital Blood Testing</title>
+			<link>http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/28-digital-blood-testing?Itemid=101</link>
+			<guid isPermaLink="true">http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/28-digital-blood-testing?Itemid=101</guid>
+			<description><![CDATA[<p><img src="http://rstheme.com/products/joomla/hepta/images/blog4.jpg" /></p><p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here,...</p>]]></description>
+			<category>Medical Blog</category>
+			<pubDate>Tue, 04 Dec 2018 07:19:15 +0000</pubDate>
+		</item>
+		<item>
+			<title>Medicine In Cheap Rate</title>
+			<link>http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/27-medicine-in-cheap-rate?Itemid=101</link>
+			<guid isPermaLink="true">http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/27-medicine-in-cheap-rate?Itemid=101</guid>
+			<description><![CDATA[<p><img src="http://rstheme.com/products/joomla/hepta/images/blog3-1.jpg" /></p><p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here,...</p>]]></description>
+			<category>Medical Blog</category>
+			<pubDate>Tue, 04 Dec 2018 07:18:37 +0000</pubDate>
+		</item>
+		<item>
+			<title> Different Types of Lung Cancer</title>
+			<link>http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/26-different-types-of-lung-cancer?Itemid=101</link>
+			<guid isPermaLink="true">http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/26-different-types-of-lung-cancer?Itemid=101</guid>
+			<description><![CDATA[<p><img src="http://rstheme.com/products/joomla/hepta/images/blog2.jpg" /></p><p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here,...</p>]]></description>
+			<category>Medical Blog</category>
+			<pubDate>Tue, 04 Dec 2018 07:17:54 +0000</pubDate>
+		</item>
+		<item>
+			<title> Doctors Are Happy With You</title>
+			<link>http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/25-doctors-are-happy-with-you?Itemid=101</link>
+			<guid isPermaLink="true">http://rstheme.com/products/joomla/hepta/index.php/component/content/article/26-medical-blog/25-doctors-are-happy-with-you?Itemid=101</guid>
+			<description><![CDATA[<p><img src="http://rstheme.com/products/joomla/hepta/images/blog1.jpg" /></p><p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here,...</p>]]></description>
+			<category>Medical Blog</category>
+			<pubDate>Tue, 04 Dec 2018 07:16:48 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

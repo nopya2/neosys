@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Hepta - Multipurpose Business Joomla Template
+* Author : rs-theme
+* Author URI : http://www.rstheme.com/
+*
+* -----------------------------------------------------------------------------
+*
+**/
+/* Device Size : Max 1199px. */
+@media only screen and (max-width: 1199px) {
+
+}
+
+/* Large Device Size: Min 992px Max 1199px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*  Device Size : Min 991px */
+@media only screen and (min-width: 991px) {
+
+}
+
+/*  Device Size: Max 1199px. */
+@media only screen and (max-width: 1199px) {
+    .slider-sub-title,
+    .home-sl-title,
+    .slider-desc,
+    .sl-title-corporate,
+    .bnr-title-personal,
+    .sub-title-lawyer.left,
+    .sl-desc3.left,
+    .sl-title.left,
+    .bnr-title-personal-small-700,
+    .bnr-title-personal-small,
+    .sl-desc-corporate{
+        padding-left: 70px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.btn-left,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .tp-layer-inner-rotation.slider-button2,
+    .slider-button2.personal-btn, .slider-button3.personal-btn{
+        margin-left: 70px !important;
+    }
+    .sl-seo-title.left,
+    .sl-seo-title.right,
+    .sub-title-lawyer.law-right,
+    .sl-title.law-right,
+    .sl-seo-desc.left,
+    .sl-seo-desc.right{
+        padding-right: 100px !important;
+    }
+    .sl-desc3.law-right{
+        padding-right: 90px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.right{
+        margin-right: 100px !important;
+    }
+    .sl-title.sfb.left,
+    .sl-desc2.sfb.left{
+        padding-left: 100px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.left{
+        margin-left: 100px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.law-right-btn{
+        margin-right: 100px !important;
+    }
+}
+
+/*  Device Size: Max 1024px. */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/*  Device Size: Max 991px. */
+@media only screen and (max-width: 991px) {
+    #sp-top-bar {
+        display: none;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-default-team .counter-top-area {
+        position: unset !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-customer-area .rs-contact::after,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-customer-area .rs-contact.inverse-skew::before {
+        display: none;
+    }
+    .sec-title-line .sppb-section-title .sppb-title-subheading {
+        max-width: unset !important;
+    }
+    .working-process .grid-box .sppb-media-content .sppb-feature-box-title {
+        margin-top: 20px !important;
+        font-size: 17px;
+    }
+    .working-process .grid-box .sppb-media-content .sppb-feature-box-title a {
+        font-size: 17px;
+    }
+    .working-process .grid-box .sppb-media-content {
+        padding: 0 10px 20px 10px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .service-section .owl-dot .overlay-feature-title {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+    .rs-cta.defult-cta .sppb-addon-content .heading-text {
+        float: none !important;
+        text-align: center;
+    }
+    .rs-cta.defult-cta .sppb-addon-content .cta-btn {
+        text-align: center !important;
+        margin: 10px 0 0 !important;
+    }
+    .rs-personal-testimonial .rs-client-logo {
+        margin: 58px auto 0 auto !important;
+    }
+    .rs-contact-personal .contact-icon-section ul {
+        margin: 70px auto 0 !important;
+    }
+    .rs-startup-contact-title .sppb-column-addons .sub-title-tb {
+        display: none;
+    }
+    .rs-contact-box .contact-column .contact-grid-item {
+        border-right: none !important;
+    }
+    .rs-contact-box .sppb-row {
+        box-shadow: none !important;
+    }
+    .rs-cta.defult-cta {
+        padding-top: 32px !important;
+    }
+    .sec-title-line .under-sec h2::after {
+        position: unset !important;
+        content: unset !important;
+    }
+    .rs-services6 .service-box {
+        padding: 50px 30px 46px !important;
+    }
+    .rs-who-i-am .sppb-column-addons .sppb-addon-raw-html.sec-title .title {
+        font-size: 30px;
+    }
+    .rs-contact-inner.default-style .contact-top-part,
+    .rs-contact-inner .contact-top-part {
+        max-width: unset !important;
+    }
+    .sl-title-corporate, 
+    .sl-desc-corporate,
+    .bnr-title-personal,
+    .bnr-title-personal-small-700,
+    .bnr-title-personal-small{
+        padding-left: 100px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.btn-left,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.personal-btn, 
+    .slider-button3.personal-btn {
+        margin-left: 100px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .center-btn{
+        margin-left: 0 !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.law-right-btn {
+        margin-right: 70px !important;
+        margin-left: 0px !important;
+    }
+    .sl-desc3.law-right {
+        padding-right: 100px !important;
+    }
+}
+/* Medium Device Size: Min 768px Max 991px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2 {
+        margin-left: 20px !important;
+    }
+}
+/* Small Device Size : 767px. */
+@media only screen and (max-width: 767px) {
+    #sp-page-builder .sec-title-water .sppb-section-title .sppb-title-subheading,
+    #sp-page-builder .sec-title-water2 .sppb-section-title .sppb-title-subheading,
+    #sp-page-builder .sec-title-water2 .under-sec .water-mark {
+        font-size: 50px !important;
+        max-width: unset !important;
+        top: -22px !important;
+    }
+    #sp-page-builder .sec-title-water .sppb-section-title {
+        margin-bottom: 47px !important;
+    }
+    #sp-page-builder .sec-title-water2 .sppb-section-title,
+    #rs-rs-startup-contact.sec-title-water .sppb-section-title,
+    #rs-services3.sec-title-water .sppb-section-title {
+        margin-bottom: 58px !important;
+    }
+    #rs-services2.sec-title-water .sppb-section-title {
+        margin-bottom: 52px !important;
+    }
+    #rs-personal-testimonial.sec-title-water .sppb-section-title,
+    #rs-blog.sec-title-water .sppb-section-title,
+    #rs-contact-personal.sec-title-water .sppb-section-title,
+    #rs-portfolio.sec-title-water2 .sppb-section-title,
+    #sp-page-builder .sec-title-water2 .under-sec {
+        margin-bottom: 53px !important;
+    }
+    #rs-skill.sec-title-water .sppb-section-title {
+        margin-bottom: 54px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2 {
+        margin-left: 40px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3 {
+        margin-right: 40px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .service-section .vertical-middle {
+        margin-top: 50px;
+    }
+    .sppb-section-title,
+    .rs-cta.seo-cta-bg .sppb-section-title,
+    #sp-main-body #sp-component #sp-page-builder .page-content .service-single-part .mb-0 .sppb-section-title {
+        margin: 0 !important;
+    }
+    .sppb-section-title .sppb-title-heading,
+    .sppb-section-title .sppb-title-subheading {
+        margin: 0 0 30px !important;
+    }
+    .sec-title-water2 .under-sec .title,
+    .rs-about-construction .sppb-column-addons .sppb-addon-content .main-title {
+        font-size: 25px !important;
+    }
+    .sec-title-line .sppb-section-title .sppb-title-heading,
+    .sec-title-line .under-sec h2 {
+        padding-right: 0 !important;
+    }
+    .sec-title-line .sppb-section-title .sppb-title-heading::after,
+    .sec-title-line .under-sec h2::after,
+    .sec-title-bottom h2::after,
+    .contact-title h2::after {
+        position: unset !important;
+        content: unset !important;
+    }
+    .sec-title-line .sppb-section-title .sppb-title-subheading {
+        display: none;
+    }
+    .sp-page-builder .page-content #rs-breadcrumbs .sppb-section-title .sppb-title-heading {
+        font-size: 24px !important;
+        line-height: 30px !important;
+        margin: 0 !important;
+    }
+    .rs-default-team .team-carousel .owl-nav {
+        display: none;
+    }
+    .rs-price-plan .price-table.style15 .cl-pricetable-wrap {
+        padding: 0 !important;
+    }
+    .rs-price-plan .price-table.style15 .cl-pricetable-wrap.price-1,
+    .rs-price-plan .price-table.style15 .cl-pricetable-wrap.price-2 {
+        margin: 0 0 20px;
+    }
+    .sp-simpleportfolio .sp-simpleportfolio-item .sp-simpleportfolio-info h3 {
+        font-size: 15px !important;
+    }
+    .menu-carousel .heading-block h3,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-default-team .rs-team .home-team .team-item .team-content .bottom-content .team-name {
+        font-size: 18px !important;
+    }
+    .rs-price-plan .price-table .cl-pricetable-wrap .top .cl-header h4 {
+        font-size: 20px !important;
+    }
+    .rs-price-plan .price-table .cl-pricetable-wrap .top .cl-subheader h3 {
+        font-size: 40px !important;
+    }
+    .rs-cta .sppb-addon-content .cta-title {
+        font-size: 25px !important;
+    }
+    .rs-personal-testimonial .cl-testimonial3 .rs-tst-slider3 .slick-slide .item-content .item-details p {
+        padding-right: 15px;
+    }
+    .rs-contact-inner .contact-top-part::after {
+        position: unset !important;
+        content: unset !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-blog .blog-carousel .owl-nav,
+    .rs-personal-testimonial.lawyer-testimonial .cl-testimonial3 .rs-tst-slider3 .slick-dots {
+        display: none !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2 a,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3 a{
+        font-size: 12px !important;
+    }
+    .tp-caption.sl-title-medical, .sl-title-medical,
+    .tp-caption.sl-title-corporate, .sl-title-corporate {
+        font-size: 30px !important;
+        line-height: 36px !important;
+        margin-bottom: 0 !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .center-btn{
+        margin-left: 0 !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.personal-btn,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.personal-btn {
+        padding: 7px 20px !important;
+        margin-top: 20px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.right{
+        margin-right: 0px !important;
+        margin-left: 20px !important;
+    }
+    .sl-seo-title.left, .sl-seo-desc.left,
+    .sl-seo-title.right, .sl-seo-desc.right {
+        padding-right: 30px !important;
+    }
+    .sl-title.sfb.left,
+    .sl-desc2.sfb.left{
+        padding-left: 50px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.left{
+        margin-left: 50px !important;
+    }
+}
+
+/* Extra Small Device Size : 575px. */
+@media only screen and (max-width: 575px) {
+    .slider-sub-title,
+    .home-sl-title,
+    .slider-desc{
+        padding-left: 30px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button{
+        margin-left: 30px !important;
+        margin-top: 25px !important;
+    }
+    .slider-button .sl-button{
+        font-size: 12px !important;
+    }
+    .tp-caption.slider-sub-title, .slider-sub-title{
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+    .tp-caption.slider-desc, .slider-desc{
+        font-size: 12px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2 a,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3 a{
+        font-size: 12px !important;
+    }
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2,
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3{
+        padding: 11px 30px !important;
+        margin-top: 50px !important;
+    }
+    .tp-caption.sl-desc, .sl-desc{
+        font-size: 12px !important;
+        line-height: 15px !important;
+        margin-top: 20px !important;
+    }
+    .tp-caption.sl-title, .sl-title, .sl-title.sfb.left{
+        font-size: 15px !important;
+        margin-top: 10px !important;
+    }
+    .tp-caption.sub-title, .sub-title{
+        font-size: 13px !important;
+    }
+    .sl-title-corporate, .sl-desc-corporate {
+        padding-left: 50px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.btn-left {
+        margin-left: 50px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.personal-btn{
+        margin-left: 130px !important;
+    }
+    .sub-title-lawyer.left,
+    .sl-desc3.left,
+    .sl-title.left{
+        padding-left: 30px !important;
+    }
+    .sub-title-lawyer.left,
+    .sub-title-lawyer.law-right, .sl-title.law-right,
+    .sl-title.left{
+        font-size: 25px !important;
+    }
+    .sub-title-lawyer.law-right{
+        padding-right: 50px !important;
+    }
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .tp-layer-inner-rotation.slider-button2{
+        margin-left: 30px !important;
+    }
+}
+
+/* Device Size : 480px. */
+@media only screen and (max-width: 480px) {
+    .sp-page-builder .page-content .sppb-section-title .sppb-title-heading,
+    .sp-page-builder .page-content h2.sppb-addon-title {
+        font-size: 20px !important;
+    }
+    .menu-carousel .heading-block h3 {
+        font-size: 16px !important;
+    }
+    .menu-carousel .heading-block h3,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-default-team .rs-team .home-team .team-item .team-content .bottom-content .team-name,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-blog .blog-item .blog-img .blog-img-content .blog-title {
+        font-size: 16px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .service-section .owl-dot .overlay-feature-title {
+        font-size: 10px;
+    }
+    .rs-about-construction .sppb-column-addons .sppb-addon-content .main-title {
+        font-size: 20px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .project-gallery .project-info .project-information .info-title {
+        font-size: 18px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .project-gallery .project-info .project-information ul li span {
+        width: 130px !important;
+    }
+    .rs-about-personal .about-btn-area .about-btn ul li {
+        margin-right: 15px !important;
+    }
+    .rs-about-personal .about-btn-area .about-btn ul li:last-child {
+        margin-right: 0 !important;
+    }
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2,
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3{
+        padding: 7px 15px !important;
+        margin-top: 20px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2 a,
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3 a{
+        font-size: 10px !important;
+    }
+    .tp-caption.sl-desc, 
+    .sl-desc{
+        display: none !important;
+    }
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .center-btn{
+        margin-top: 0 !important;
+    }
+    .tp-caption.sl-title-medical, .sl-title-medical,
+    .tp-caption.sl-title-corporate, .sl-title-corporate {
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+    .tp-caption.sl-desc-corporate, 
+    .sl-desc-corporate,
+    .tp-caption.sl-desc-medical, 
+    .sl-desc-medical{
+        font-size: 13px !important;
+        line-height: 15px !important;
+    }
+    .bnr-title-personal, 
+    .bnr-title-personal-small-700, 
+    .bnr-title-personal-small {
+        padding-left: 50px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button2.personal-btn, 
+    .slider-button3.personal-btn {
+        margin-left: 50px !important;
+    }
+    #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .slider-button3.personal-btn {
+        margin-left: 80px !important;
+    }
+    .sl-desc3.left{
+        font-size: 12px !important;
+        margin-top: 25px !important;
+    }
+     .sl-desc3.law-right{
+        display: none;
+     }
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .tp-layer-inner-rotation.slider-button2{
+        margin-top: 50px !important;
+    }
+}
+
+/* Device Size : 380px. */
+@media only screen and (max-width: 380px) {
+    .tp-caption.slider-sub-title, .slider-sub-title{
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }
+    .tp-caption.slider-desc, .slider-desc{
+        font-size: 10px !important;
+    }
+    .tp-caption.sl-desc-corporate, 
+    .sl-desc-corporate,
+    .tp-caption.sl-desc-medical,
+    .sl-seo-desc.right,
+    .sl-desc3.left,
+    .sl-desc3.law-right,
+    .sl-desc2.sfb.left,
+    .sl-desc-medical{
+        display: none !important;
+    }
+    body #sp-main-body #sp-component #sp-page-builder .page-content .rs-slider .rev_slider ul li .tp-layer-inner-rotation.slider-button2 {
+        margin-top: 10px !important;
+    }
+}

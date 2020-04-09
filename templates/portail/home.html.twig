@@ -1,0 +1,913 @@
+{# templates/portail/home.html.twig #}
+
+{% extends 'portail/layout.html.twig' %}
+
+{% block titre %}Accueil{% endblock %}
+
+{% block page_content %}
+<!-- Sliders -->
+<div id="section-id-1542778054498" class="sppb-section  rs-slider" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-container-inner">
+        <div class="sppb-row sppb-no-gutter">
+            <div class="sppb-col-md-12" id="column-wrap-id-1542778054543">
+                <div id="column-id-1542778054543" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1542778054544" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-module ">
+                                <div class="sppb-addon-content"><!-- START REVOLUTION SLIDER 5.0.16 fullwidth mode -->
+                                    <div id="rev_slider_7_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;max-height:700px;position:relative;z-index:0;">
+                                        <div id="rev_slider_7_1" class="rev_slider fullwidthabanner" style="display:none;max-height:700px;height:700px;">
+                                            <ul><!-- SLIDE  1-->
+                                                {% for slider in sliders %}
+                                                <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" ><!-- MAIN IMAGE -->
+                                                    <img src="{{ asset('images/sliders/'~slider.imageName) }}"  alt="h2-s-1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"><!-- LAYERS -->
+                                                    <!-- LAYER NR. 1 -->
+                                                    <div class="tp-caption sl-desc sft tp-resizeme"
+                                                        data-x="center" data-hoffset="55"
+                                                        data-y="center" data-voffset="38"
+                                                        data-speed="1200"
+                                                        data-start="500"
+                                                        data-easing="Power3.easeInOut"
+                                                        data-splitin="none"
+                                                        data-splitout="none"
+                                                        data-elementdelay="0.1"
+                                                        data-endelementdelay="0.1"
+                                                        data-endspeed="300"
+
+                                                        style="z-index: 5; max-width: none; max-height: none; white-space: nowrap;">{{slider.sousTitre}}
+                                                    </div>
+                                                    <!-- LAYER NR. 2 -->
+                                                    <div class="tp-caption sl-title sfl tp-resizeme"
+                                                        data-x="center" data-hoffset="-1"
+                                                        data-y="center" data-voffset="-27"
+                                                        data-speed="700"
+                                                        data-start="500"
+                                                        data-easing="Power3.easeInOut"
+                                                        data-splitin="none"
+                                                        data-splitout="none"
+                                                        data-elementdelay="0.1"
+                                                        data-endelementdelay="0.1"
+                                                        data-endspeed="300"
+
+                                                        style="z-index: 6; max-width: none; max-height: none; white-space: nowrap;">{{slider.titre}}
+                                                    </div>
+                                                    <!-- LAYER NR. 3 -->
+                                                    <div class="tp-caption sub-title sfl tp-resizeme"
+                                                        data-x="center" data-hoffset="19"
+                                                        data-y="center" data-voffset="-100"
+                                                        data-speed="400"
+                                                        data-start="500"
+                                                        data-easing="Power3.easeInOut"
+                                                        data-splitin="none"
+                                                        data-splitout="none"
+                                                        data-elementdelay="0.1"
+                                                        data-endelementdelay="0.1"
+                                                        data-endspeed="300"
+
+                                                        style="z-index: 7; max-width: none; max-height: none; white-space: nowrap;">NeoSys Technologie
+                                                    </div>
+                                                    <!-- LAYER NR. 4 -->
+                                                    <div class="tp-caption slider-button3 sfl tp-resizeme"
+                                                        data-x="center" data-hoffset="-100"
+                                                        data-y="center" data-voffset="128"
+                                                        data-speed="1500"
+                                                        data-start="500"
+                                                        data-easing="Power3.easeInOut"
+                                                        data-splitin="none"
+                                                        data-splitout="none"
+                                                        data-elementdelay="0.1"
+                                                        data-endelementdelay="0.1"
+                                                        data-endspeed="300"
+
+                                                        style="z-index: 8; max-width: none; max-height: none; white-space: nowrap;"><a href="{{ slider.url }}" class='sl-button'>Lire Plus</a>
+                                                    </div>
+                                                    <!-- LAYER NR. 5 -->
+                                                    <div class="tp-caption slider-button2 sfr tp-resizeme"
+                                                        data-x="center" data-hoffset="100"
+                                                        data-y="center" data-voffset="128"
+                                                        data-speed="1500"
+                                                        data-start="500"
+                                                        data-easing="Power3.easeInOut"
+                                                        data-splitin="none"
+                                                        data-splitout="none"
+                                                        data-elementdelay="0.1"
+                                                        data-endelementdelay="0.1"
+                                                        data-endspeed="300"
+
+                                                        style="z-index: 9; max-width: none; max-height: none; white-space: nowrap;"><a href="{{ path('contacts') }}" class='sl-button'>Contactez Nous</a>
+                                                    </div>
+                                                </li>
+                                                {% endfor %}
+                                            </ul>
+                                            <div class="tp-bannertimer">
+
+                                            </div>
+                                        </div>
+                                    </div><!-- END REVOLUTION SLIDER -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./Sliders -->
+
+<!-- History -->
+<div id="section-id-1541655057438" class="sppb-section  rs-top-history" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-container-inner">
+        <div class="sppb-row sppb-no-gutter">
+            <div class="sppb-col-md-4" id="column-wrap-id-1541655057435">
+                <div id="column-id-1541655057435" class="sppb-column history-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1541655057441" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-feature  ">
+                                <div class="sppb-addon-content sppb-text-center">
+                                    <div class="sppb-icon">
+                                        <span class="sppb-icon-container">
+                                            <i aria-hidden="true" aria-label="Notre Histoire" class="fa fa-book"></i>
+                                        </span>
+                                    </div>
+                                    <div class="sppb-media-content">
+                                        <h4 class="sppb-addon-title sppb-feature-box-title">
+                                            <a href="#">Notre Histoire</a>
+                                        </h4>
+                                        <div class="sppb-addon-text">
+                                            NeoSys Technologie est une société créée par trois jeunes gabonais passionnés par les domaines du 
+                                            numérique...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sppb-col-md-4" id="column-wrap-id-1541655057467">
+                <div id="column-id-1541655057467" class="sppb-column history-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1541655057483" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-feature  ">
+                                <div class="sppb-addon-content sppb-text-center">
+                                    <div class="sppb-icon">
+                                        <span class="sppb-icon-container">
+                                            <i aria-hidden="true" aria-label="Notre Mission" class="fa fa-bar-chart-o"></i>
+                                        </span>
+                                    </div>
+                                    <div class="sppb-media-content">
+                                        <h4 class="sppb-addon-title sppb-feature-box-title">
+                                            <a href="#">Notre Mission</a>
+                                        </h4>
+                                        <div class="sppb-addon-text">
+                                            Réaliser et proposer des services innovant et à forte valeur ajoutée...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sppb-col-md-4" id="column-wrap-id-1541655057468">
+                <div id="column-id-1541655057468" class="sppb-column history-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1541655057486" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-feature  ">
+                                <div class="sppb-addon-content sppb-text-center">
+                                    <div class="sppb-icon">
+                                        <span class="sppb-icon-container">
+                                            <i aria-hidden="true" aria-label="Notre Vision" class="fa fa-lightbulb-o"></i>
+                                        </span>
+                                    </div>
+                                    <div class="sppb-media-content">
+                                        <h4 class="sppb-addon-title sppb-feature-box-title">
+                                            <a href="#">Notre Vision</a>
+                                        </h4>
+                                        <div class="sppb-addon-text">
+                                            Se positionner comme la première entreprise IT Made In Gabon dans la sous-région...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./History -->
+
+<!-- About -->
+<section id="section-id-1541576006909" class="sppb-section  rs-about" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-row-container">
+        <div class="sppb-row">
+            <div class="sppb-col-md-7" id="column-wrap-id-1541576006907">
+                <div id="column-id-1541576006907" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="section-id-1541576006913" class="sppb-section " >
+                            <div class="sppb-row-overlay"></div>
+                            <div class="sppb-container-inner">
+                                <div class="sppb-row">
+                                    <div class="sppb-col-md-12" id="column-wrap-id-1541576006914">
+                                        <div id="column-id-1541576006914" class="sppb-column" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1541576006919" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-header sec-title-bottom sppb-text-left">
+                                                        <h2 class="sppb-addon-title">Avec {{annee}} ans d'expérience</h2>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1541655057400" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-text-block 0  about-desc">
+                                                        <div class="sppb-addon-content">
+                                                            NeoSys Technologie a su, après plusieurs années et de nombreux projets
+                                                            réalisés, se développer. Ce développement est passé par la mise en place
+                                                            de méthodologie efficace, correspondant aux besoins des clients, permettant ainsi 
+                                                            à NeoSys Technologie de réaliser quasiment tous les projets initiés.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rs-skillbar" class="sppb-section  rs-skillbar" >
+                            <div class="sppb-row-overlay"></div>
+                            <div class="sppb-container-inner">
+                                <div class="sppb-row">
+                                    <div class="sppb-col-md-12" id="column-wrap-id-1545194880859">
+                                        <div id="column-id-1545194880859" class="sppb-column" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1545194880860" class="clearfix" >
+                                                    <div class="sppb-progress-label clearfix">
+                                                        PLANIFICATION<span>75%</span>
+                                                    </div>
+                                                    <div class="sppb-progress rs-skill-bar">
+                                                        <div class="sppb-progress-bar custom " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" data-width="75%"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1545194880861" class="clearfix" >
+                                                    <div class="sppb-progress-label clearfix">
+                                                        CONCEPTION<span>90%</span>
+                                                    </div>
+                                                    <div class="sppb-progress rs-skill-bar">
+                                                        <div class="sppb-progress-bar custom " role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-width="90%"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1545194880862" class="clearfix" >
+                                                    <div class="sppb-progress-label clearfix">
+                                                        REALISATION<span>95%</span>
+                                                    </div>
+                                                    <div class="sppb-progress rs-skill-bar">
+                                                        <div class="sppb-progress-bar custom " role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-width="95%"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1545194880863" class="clearfix" >
+                                                    <div class="sppb-progress-label clearfix">
+                                                        PRODUCTION<span>70%</span>
+                                                    </div>
+                                                    <div class="sppb-progress rs-skill-bar">
+                                                        <div class="sppb-progress-bar custom " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-width="70%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sppb-col-md-5" id="column-wrap-id-1541576006908">
+                <div id="column-id-1541576006908" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1541576006912" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-single-image sppb-text-center about-image">
+                                <div class="sppb-addon-content">
+                                    <div class="sppb-addon-single-image-container">
+                                        <img class="sppb-img-responsive" src="{{ asset('theme/hepta/images/2018/11/07/5c.png') }}" alt="Image" title="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./About -->
+
+<!-- Services -->
+<section id="section-id-1541665805573" class="sppb-section  rs-service-section sec-title-line" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-row-container">
+        <div class="sppb-section-title sppb-text-left">
+            <h3 class="sppb-title-heading">Quels Services Nous Offrons</h3>
+            <p class="sppb-title-subheading">Neosys Technologie propose une large gamme de services afin de répondre aux besoins de tous les clients et dans les domaines des TICs
+            </p>
+        </div>
+        <div class="sppb-row">
+            <div class="sppb-col-md-12" id="column-wrap-id-1541665805572">
+                <div id="column-id-1541665805572" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1543395304383" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-module service-section">
+                                <div class="sppb-addon-content">
+                                    <div class="clfeatures">
+                                        <div class="row common-height clearfix">
+                                            <div class="col-md-5 col-sm-12 col-xs-12 nopadding" style="background-color: #FFF; padding: 0; box-shadow: -4px 1px 15px 3px rgba(0,0,0,0.07);">
+                                                <div id="feature-right" class="menu-carousel owl-carousel image-carousel custom-js" data-animate-in="fadeIn" data-margin="0" data-nav="false" data-pagi="false" data-items="1">
+                                                    {% for service in services %}
+                                                    <div class="oc-item">
+                                                        <a href="{{path('service_details', {'id': service.id})}}">
+                                                            <img src="{{ asset('images/services/'~service.imageName) }}" alt="" itemprop="image"/>
+                                                        </a>
+                                                        <div class="feature-content clearfix">
+                                                            <div class="heading-block">
+                                                                <h3 class="feature-title">
+                                                                    <a href="{{path('service_details', {'id': service.id})}}">{{service.titre}}</a>
+                                                                </h3>
+                                                                <p style="max-lines: 3;">{{service.description|striptags|truncate(200, true)|raw}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12 nopadding-sm clearfix">
+                                                <div class="vertical-middle">
+                                                    <div class="col-padding clearfix">
+                                                        <div>
+                                                            <div id="item-thumb1" class="item-thumb">
+                                                                {% for service in services %}
+                                                                <div class="owl-dot">
+                                                                    <img src="{{ asset('images/services/'~service.imageName) }}" alt="" itemprop="image"/>
+                                                                    <h3 class="overlay-feature-title">
+                                                                        <a href="{{path('service_details', {'id': service.id})}}">{{service.titre}}</a>
+                                                                    </h3>
+                                                                </div>
+                                                                {% endfor %}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Services -->
+
+<!-- 6 Derniers projets-->
+<section id="section-id-1541655057509" class="sppb-section  sec-title-line" >
+  <div class="sppb-row-overlay"></div>
+  <div class="sppb-row-container">
+      <div class="sppb-section-title sppb-text-left">
+          <h2 class="sppb-title-heading">Nos derniers projets</h2>
+      </div>
+      <div class="sppb-row">
+          <div class="sppb-col-md-12" id="column-wrap-id-1541655057507">
+              <div id="column-id-1541655057507" class="sppb-column" >
+                  <div class="sppb-column-addons">
+                      <div id="sppb-addon-1541655057515" class="clearfix" >
+                          <div class="sppb-addon sppb-addon-module project-slider">
+                              <div class="sppb-addon-content">
+                                  <div id="mod-sp-simpleportfolio" class="sp-simpleportfolio sp-simpleportfolio-view-items layout-default ">
+                                      <div class="sp-simpleportfolio-items sp-simpleportfolio-columns-3">
+                                          {% for projet in projets %}
+                                          <div class="sp-simpleportfolio-item" data-groups='[{{projet.service.titre}}]'>
+                                              <div class="sp-simpleportfolio-overlay-wrapper clearfix">
+                                                  <img class="sp-simpleportfolio-img" src="{{ asset('images/projets/'~projet.imageName|default('default.png')) }}" alt="Speaker Block">
+                                                  <div class="sp-simpleportfolio-overlay">
+                                                      <div class="sp-vertical-middle">
+                                                          <div>
+                                                              <div class="sp-simpleportfolio-btns">
+                                                                  <a class="btn-zoom" href="{{ asset('images/projets/'~projet.imageName|default('default.png')) }}" data-featherlight="image">Zoom</a>
+                                                                  <a class="btn-view" href="{{path('projet_details', {'id': projet.id})}}">View</a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="sp-simpleportfolio-info">
+                                                  <h3 class="sp-simpleportfolio-title">
+                                                      <a href="{{path('projet_details', {'id': projet.id})}}">{{projet.titre}}</a>
+                                                  </h3>
+                                                  <div class="sp-simpleportfolio-tags">{{projet.service.titre}}</div>
+                                              </div>
+                                          </div>
+                                          {% endfor %}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- ./6 Derniers projets-->
+
+<!-- Pourquoi nous choisir -->
+<section id="section-id-1545206719093" class="sppb-section  why-choose-us sec-title-line" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-row-container">
+        <div class="sppb-row sppb-align-center">
+            <div class="sppb-col-md-6" id="column-wrap-id-1545206719106">
+                <div id="column-id-1545206719106" class="sppb-column video-section-area" >
+                    <div class="sppb-column-overlay"></div>
+                    <div class="sppb-column-addons">
+                        <div id="section-id-1545206719107" class="sppb-section " >
+                            <div class="sppb-row-overlay"></div>
+                            <div class="sppb-container-inner">
+                                <div class="sppb-row">
+                                    <div class="sppb-col-md-12" id="column-wrap-id-1545206719108">
+                                        <div id="column-id-1545206719108" class="sppb-column" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1545206719109" class="clearfix" >
+                                                    <div class="video-icon sppb-text-center">
+                                                        <a class="sppb-modal-selector sppb-magnific-popup" href="https://www.youtube.com/watch?v=YLN1Argi7ik" data-popup_type="iframe" data-mainclass="mfp-no-margins mfp-with-zoom" id="sppb-modal-1545206719109-selector">
+                                                            <span><i class="fa fa-play"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sppb-col-md-6" id="column-wrap-id-1545206719110">
+                <div id="column-id-1545206719110" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="section-id-1545206719111" class="sppb-section  services-responsibiity primary-icon" >
+                            <div class="sppb-row-overlay"></div>
+                            <div class="sppb-container-inner">
+                                <div class="sppb-row">
+                                    <div class="sppb-col-md-12" id="column-wrap-id-1545206719112">
+                                        <div id="column-id-1545206719112" class="sppb-column" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1545206719113" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-header under-sec sppb-text-left">
+                                                        <h2 class="sppb-addon-title">Pourquoi nous choisir</h2>
+                                                    </div>
+                                                </div>
+                                                {#<div id="sppb-addon-1545206719114" class="clearfix" >#}
+                                                    {#<div class="sppb-addon sppb-addon-feature sppb-text-left services-desc">#}
+                                                        {#<div class="sppb-addon-content sppb-text-left">#}
+                                                            {#<div class="sppb-media">#}
+                                                                {#<div class="pull-left">#}
+                                                                    {#<div class="sppb-icon">#}
+                                                                        {#<span class="sppb-icon-container"><i aria-hidden="true" aria-label="First Working Prosses" class="fa fa-opera"></i></span>#}
+                                                                    {#</div>#}
+                                                                {#</div>#}
+                                                                {#<div class="sppb-media-body">#}
+                                                                    {#<div class="sppb-media-content">#}
+                                                                        {#<h3 class="sppb-addon-title sppb-feature-box-title sppb-media-heading">#}
+                                                                            {#<a href="#">First Working Prosses</a>#}
+                                                                        {#</h3>#}
+                                                                        {#<div class="sppb-addon-text">#}
+                                                                            {#Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut#}
+                                                                        {#</div>#}
+                                                                    {#</div>#}
+                                                                {#</div>#}
+                                                            {#</div>#}
+                                                        {#</div>#}
+                                                    {#</div>#}
+                                                {#</div>#}
+                                                <div id="sppb-addon-1545206719115" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-feature sppb-text-left services-desc">
+                                                        <div class="sppb-addon-content sppb-text-left">
+                                                            <div class="sppb-media">
+                                                                <div class="pull-left">
+                                                                    <div class="sppb-icon">
+                                                                        <span class="sppb-icon-container"><i aria-hidden="true" aria-label="Dedicate Team" class="fa fa-life-bouy"></i></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="sppb-media-body">
+                                                                    <div class="sppb-media-content">
+                                                                        <h3 class="sppb-addon-title sppb-feature-box-title sppb-media-heading"><a href="#">Équipe dédiée</a></h3>
+                                                                        <div class="sppb-addon-text">
+                                                                            Un interlocuteur unique tout au long de la mise en oeuvre de votre projet
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1545206719116" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-feature sppb-text-left services-desc">
+                                                        <div class="sppb-addon-content sppb-text-left">
+                                                            <div class="sppb-media">
+                                                                <div class="pull-left">
+                                                                    <div class="sppb-icon">
+                                                                        <span class="sppb-icon-container">
+                                                                            <i aria-hidden="true" aria-label="24/7 Hours Support" class="fa fa-code-fork"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="sppb-media-body">
+                                                                    <div class="sppb-media-content">
+                                                                        <h3 class="sppb-addon-title sppb-feature-box-title sppb-media-heading">
+                                                                            <a href="#">Assistance 24H/24 - 7J/7</a>
+                                                                        </h3>
+                                                                        <div class="sppb-addon-text">
+                                                                            Pour toute urgence ou dysfonctionnement sur vos installations et systèmes, Neosys Technologie mobilise toute une équipe pour assurer le PRA.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Pourquoi nous choisir -->
+
+<!-- references et teams-->
+<section id="section-id-1541665805506" class="sppb-section  rs-default-team" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-row-container">
+        <div class="sppb-row">
+            <div class="sppb-col-md-12" id="column-wrap-id-1541665805505">
+                <div id="column-id-1541665805505" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="section-id-1541665805511" class="sppb-section  counter-top-area default-style" >
+                            <div class="sppb-row-overlay"></div>
+                            <div class="sppb-container-inner">
+                                <div class="sppb-row">
+                                    <div class="sppb-col-md-3" id="column-wrap-id-1541665805482">
+                                        <div id="column-id-1541665805482" class="sppb-column rs-counter-list" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1541665805483" class="clearfix" >
+                                                    <div class="sppb-icon  sppb-text-center sppb-icon-hover-effect-zoom-in">
+                                                        <span class="sppb-icon-inner"><i class="fa fa-odnoklassniki"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1541665805484" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-animated-number sppb-text-center ">
+                                                        <div class="sppb-addon-content">
+                                                            <div class="sppb-animated-number" data-digit="978" data-duration="1000">0</div>
+                                                            <div class="sppb-animated-number-title">Client Heureux</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sppb-col-md-3" id="column-wrap-id-1541665805485">
+                                        <div id="column-id-1541665805485" class="sppb-column rs-counter-list" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1541665805486" class="clearfix" >
+                                                    <div class="sppb-icon  sppb-text-center sppb-icon-hover-effect-zoom-in">
+                                                        <span class="sppb-icon-inner"><i class="fa fa-asl-interpreting"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1541665805487" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-animated-number sppb-text-center ">
+                                                        <div class="sppb-addon-content">
+                                                            <div class="sppb-animated-number" data-digit="3665" data-duration="1000">0</div>
+                                                            <div class="sppb-animated-number-title">Projet Réalisé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sppb-col-md-3" id="column-wrap-id-1541665805488">
+                                        <div id="column-id-1541665805488" class="sppb-column rs-counter-list" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1541665805489" class="clearfix" >
+                                                    <div class="sppb-icon  sppb-text-center sppb-icon-hover-effect-zoom-in">
+                                                        <span class="sppb-icon-inner"><i class="fa fa-diamond"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1541665805490" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-animated-number sppb-text-center ">
+                                                        <div class="sppb-addon-content">
+                                                            <div class="sppb-animated-number" data-digit="869" data-duration="1000">0</div>
+                                                            <div class="sppb-animated-number-title">Prix Gagné</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sppb-col-md-3" id="column-wrap-id-1541665805491">
+                                        <div id="column-id-1541665805491" class="sppb-column rs-counter-list" >
+                                            <div class="sppb-column-addons">
+                                                <div id="sppb-addon-1541665805492" class="clearfix" >
+                                                    <div class="sppb-icon  sppb-text-center sppb-icon-hover-effect-zoom-in">
+                                                        <span class="sppb-icon-inner"><i class="fa fa-paper-plane-o"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div id="sppb-addon-1541665805493" class="clearfix" >
+                                                    <div class="sppb-addon sppb-addon-animated-number sppb-text-center ">
+                                                        <div class="sppb-addon-content">
+                                                            <div class="sppb-animated-number" data-digit="25" data-duration="1000">0</div>
+                                                            <div class="sppb-animated-number-title">Année D'Expérience</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="section-id-1541665805516" class="sppb-section  rs-team sec-title-line no-padding" >
+                          <div class="sppb-row-overlay"></div>
+                          <div class="sppb-container-inner">
+                            <div class="sppb-container">
+                              <div class="sppb-section-title sppb-text-left">
+                                <h2 class="sppb-title-heading">Notre équipe d'experts</h2>
+                              </div>
+                            </div>
+                            <div class="sppb-row">
+                              <div class="sppb-col-md-12" id="column-wrap-id-1541665805495">
+                                <div id="column-id-1541665805495" class="sppb-column" >
+                                  <div class="sppb-column-addons">
+                                    <div id="sppb-addon-1541665805497" class="clearfix" >
+                                      <div class="sppb-addon sppb-addon-module home-team">
+                                        <div class="sppb-addon-content">
+                                          <div id="owl-demo" class="team-carousel owl-carousel owl-theme owl-navigation-yes">
+                                            <!-- MEMBRE -->
+                                            {% for utilisateur in utilisateurs %}
+                                            <div class="item team-item">
+                                              <div class="team-img">
+                                                <a href="../component/keenteam/keenteam/149bc.html?Itemid=101">
+                                                  <img src="{{ asset('images/users/'~utilisateur.imageName) }}" class="img_team">
+                                                </a>
+                                                <div class="team-social">
+                                                  <a href="{{utilisateur.facebook|default('#')}}" class="social-icon"><i class="fa fa-facebook"></i></a>
+                                                  <a href="{{utilisateur.twitter|default('#')}}" class="social-icon"><i class="fa fa-twitter"></i></a>
+                                                  <a href="{{utilisateur.googleplus|default('#')}}" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                                                  <a href="{{utilisateur.linkedin|default('#')}}" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                                                </div>
+                                              </div>
+                                              <div class="fyl-caption">
+                                                <h3 class="team-name">
+                                                  <a href="../component/keenteam/keenteam/149bc.html?Itemid=101">{{utilisateur.nom}} {{utilisateur.prenom}}</a>
+                                                </h3>
+                                                <span class="team-title">{{utilisateur.fonction}}</span><br/>
+                                              </div>
+                                              <div class="team-content">
+                                                <div class="display-table">
+                                                  <div class="display-table-cell">
+                                                    <div class="social-icons">
+                                                      <a href="{{utilisateur.facebook|default('#')}}" class="social-icon"><i class="fa fa-facebook"></i></a>
+                                                      <a href="{{utilisateur.twitter|default('#')}}" class="social-icon"><i class="fa fa-twitter"></i></a>
+                                                      <a href="{{utilisateur.googleplus|default('#')}}" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                                                      <a href="{{utilisateur.linkedin|default('#')}}" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                    <div class="bottom-content">
+                                                      <h4 class="team-name">
+                                                        <a href="../component/keenteam/keenteam/149bc.html?Itemid=101">{{utilisateur.nom}} {{utilisateur.prenom}}</a>
+                                                      </h4>
+                                                      <span class="team-title">{{utilisateur.fonction}}</span><br/>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            {% endfor %}
+                                            <!-- ./MEMBRE -->
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </section>
+<!-- ./references et teams-->
+
+<!-- Devis et Avis Client -->
+<section id="section-id-1542259678123" class="sppb-section  rs-customer-area" >
+    <div class="sppb-row-overlay"></div>
+    <div class="sppb-row-container">
+        <div class="sppb-row">
+            <div class="sppb-col-md-6" id="column-wrap-id-1542259678099">
+                <div id="column-id-1542259678099" class="sppb-column rs-contact" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1542259678100" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-header contact-title sppb-text-left">
+                                <h2 class="sppb-addon-title">Besoin d'un devis</h2>
+                            </div>
+                        </div>
+                        <div id="sppb-addon-1542259678101" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-ajax-contact contact-form">
+                                <div class="sppb-ajax-contact-content">
+                                    <form class="sppb-ajaxt-contact-form">
+                                        <div class="sppb-row">
+                                            <div class="sppb-form-group  sppb-col-sm-12">
+                                                <input type="text" name="name" class="sppb-form-control" placeholder="Nom" required="required">
+                                            </div>
+                                            <div class="sppb-form-group  sppb-col-sm-12">
+                                                <input type="email" name="email" class="sppb-form-control" placeholder="Email" required="required">
+                                            </div>
+                                            <div class="sppb-form-group  sppb-col-sm-12">
+                                                <input type="text" name="subject" class="sppb-form-control" placeholder="Objet" required="required">
+                                            </div>
+                                            <div class="sppb-form-group  sppb-col-sm-12">
+                                                <textarea name="message" rows="5" class="sppb-form-control" placeholder="Message" required="required"></textarea>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="recipient" value="c3VwcG9ydEByc3RoZW1lLmNvbQ==">
+                                        <input type="hidden" name="from_email" value="">
+                                        <input type="hidden" name="from_name" value="">
+                                        <input type="hidden" name="captcha_type" value="default">
+                                        <div class="sppb-text-left">
+                                            <button type="submit" id="btn-1542259678101" class="sppb-btn sppb-btn-success"><i class="fa"></i> Envoyer</button>
+                                        </div>
+                                    </form>
+                                    <div style="display:none;margin-top:10px;" class="sppb-ajax-contact-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sppb-col-md-6" id="column-wrap-id-1542259678102">
+                <div id="column-id-1542259678102" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1542259678103" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-module home-testimonial">
+                                <div class="sppb-addon-content">
+                                    <div id="cl-testimonial" class="cl-testimonial2">
+                                        <div class="container">
+                                            <div class="rs-tst-slider slider">
+                                                <div>
+                                                    <img src="{{ asset('theme/hepta/images/cltestimonials/thumbnail_t2.jpg') }}" alt="Jessi Jully">
+                                                    <div class="rs-tst-content">
+                                                        <div class="rs-tst-title">Jessi Jully</div>
+                                                        <div class="rs-tst-designation">Designer</div>
+                                                        <span class="testi-title">XYZM</span>
+                                                        <span class="testi-title"></span>
+                                                        <div class="rs-tst-details">
+                                                            <p>But I must explain to you how all of this mistaken idea of the denoun on pleasure and praising</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="{{ asset('theme/hepta/images/cltestimonials/thumbnail_t1.jpg') }}" alt="Steve Austin">
+                                                    <div class="rs-tst-content">
+                                                        <div class="rs-tst-title">Steve Austin</div>
+                                                        <div class="rs-tst-designation">Manager</div>
+                                                        <span class="testi-title">XYZM</span>
+                                                        <span class="testi-title"></span>
+                                                        <div class="rs-tst-details">
+                                                            <p>But I must explain to you how all of this mistaken idea of the denoun on pleasure and praising</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Devis et Avis Client -->
+
+<!-- Latest Blog Post -->
+<section id="section-id-1541752970775" class="sppb-section  rs-blog sec-title-line" >
+  <div class="sppb-row-overlay"></div>
+  <div class="sppb-row-container">
+    <div class="sppb-section-title sppb-text-left">
+      <h2 class="sppb-title-heading">Dernières Actualités</h2>
+    </div>
+    <div class="sppb-row">
+      <div class="sppb-col-md-12" id="column-wrap-id-1541752970795">
+        <div id="column-id-1541752970795" class="sppb-column" >
+          <div class="sppb-column-addons">
+            <div id="sppb-addon-1541752970797" class="clearfix" >
+              <div class="sppb-addon sppb-addon-module ">
+                <div class="sppb-addon-content">
+                  <div class=" recent-post-widget">
+                    <div class="blog-carousel owl-carousel owl-navigation-yes">
+                      {% for blog in blogs %}
+                      <div itemscope itemtype="http://schema.org/Article">
+                        <div class="blog-item">
+                          <div class="blog-img">
+                            <img src="{{ asset('images/uploads/'~blog.image.imageName|default('default.png')) }}" alt="" itemprop="image"/>
+                            <div class="blog-img-content">
+                              <div class="display-table">
+                                <div class="display-table-cell">
+                                  <div class="blog-date">{{blog.createdAt|date('d m Y')}}</div>
+                                  <div class="blog-title">
+                                    <h3 class="blog-title">
+                                      <a href="../component/content/article/19-business/3-business-need-customers49bc.html?Itemid=101">{{blog.titre}}</a>
+                                    </h3>
+                                  </div>                            
+                                  <div class="blog-desc">
+                                    <p>{{blog.contenu|raw}}</p>
+                                  </div>
+                                  <div class="blog-button">
+                                    <a class="readmore" href="../component/content/article/19-business/3-business-need-customers49bc.html?Itemid=101">Voir Plus...</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>    
+                  <script type="text/javascript">
+                  // blog init
+                      jQuery(".blog-carousel").owlCarousel({
+                          margin:30,
+                          nav:false,
+                          dots:true,
+                          navText: [
+                        "<i class='fa fa-angle-left'></i>",
+                        "<i class='fa fa-angle-right'></i>"
+                        ],
+                          loop:true,
+                          items:3,
+                          autoplay:true,
+                          autoplayTimeout:3000,
+                          autoplayHoverPause:true,
+                          responsiveClass:true,
+                          center: true,
+                          responsive:{
+                              0:{
+                                  items:1
+                              },
+                              992:{
+                                  items:3
+                              },
+                              1200:{
+                                  items:3
+                              }
+                          }
+                      });
+                  
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./Latest Blog Post -->
+
+<!-- PARTENAIRES -->
+{{ render(controller(
+  'App\\Controller\\PortailController::partenaires'
+)) }}
+<!-- ./PARTENAIRES-->
+{% endblock %}

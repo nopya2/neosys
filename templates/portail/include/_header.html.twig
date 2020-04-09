@@ -1,0 +1,61 @@
+<header id="sp-header" {% if page != 'home' %} style="background: #222" {% endif %}>
+    <div class="container">
+        <div class="container-inner">
+            <div class="row">
+                <div id="sp-logo" class="col-8 col-lg-3">
+                    <div class="sp-column">
+                        <div class="logo">
+                            <a href="../../index.html">
+                                <img class="logo-image" src="{{ asset('theme/hepta/images/logo-white.png') }}" alt="Hepta - Multipurpose Business Joomla Template">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sp-menu" class="col-4 col-lg-9">
+                    <div class="sp-column">
+                        <nav class="sp-megamenu-wrapper" role="navigation">
+                            <a id="offcanvas-toggler" aria-label="Navigation" class="offcanvas-toggler-right d-block d-lg-none" href="#">
+                                <i class="fa fa-bars" aria-hidden="true" title="Navigation"></i>
+                            </a>
+                            <ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
+                                <li class="sp-menu-item {% if page == 'home' %}active{% endif %}">
+                                    <a  href="{{ path('home') }}" >Accueil</a>
+                                </li>
+                                <li class="sp-menu-item {% if page == 'apropos' %}active{% endif %}">
+                                    <a  href="{{ path('apropos') }}" >A Propos</a>
+                                </li>
+                                <li class="sp-menu-item {% if page == 'service' or page == 'service_details' %}active{% endif %}">
+                                    <a  href="{{ path('services')}}" >Services</a>
+                                </li>
+                                <li class="sp-menu-item {% if page == 'projet' or page == 'projet_details' %}active{% endif %}">
+                                    <a  href="{{ path('projets')}}" >Projets</a>
+                                </li>
+                                <li class="sp-menu-item {% if page == 'actualite' or page == 'actualite_details' %}active{% endif %}">
+                                    <a  href="{{ path('actualites') }}" >Actualités</a>
+                                </li>
+                                <li class="sp-menu-item sp-has-child {% if page == 'evenement' or page =='evenement_details' or page == 'contact' %}active{% endif %}">
+                                    <a  href="#" >Plus</a>
+                                    <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
+                                        <div class="sp-dropdown-inner">
+                                            <ul class="sp-dropdown-items">
+                                                <li class="sp-menu-item alias-parent-active {% if page == 'evenement' or page =='evenement_details' %}active{% endif %}">
+                                                    <a  href="{{ path('evenements') }}" >évènements</a>
+                                                </li>
+                                                <!-- <li class="sp-menu-item alias-parent-active">
+                                                    <a  href="#" >formations</a>
+                                                </li> -->
+                                                <li class="sp-menu-item alias-parent-active {% if page == 'contact' %}active{% endif %}">
+                                                    <a  href="{{ path('contacts') }}" >contacts</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
